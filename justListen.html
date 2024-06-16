@@ -1,67 +1,182 @@
-
 <!DOCTYPE html>
-    <html>
-    <head>
+<html>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Just Listen</title>
-    </head>
+</head>
 
-    <body>
+<body>
     <!DOCTYPE html>
     <html>
+
     <head>
-    <script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
+        <script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
     </head>
+
     <body>
-    <a-scene>    
-        
-        <a-sky 
-        color="cornflowerblue">
-        </a-sky>
-   
-        <a-plane 
-        color="forestgreen" 
-        width="3"
-        height="3.33" 
-        rotation="-90 0 0"         
-        position="-3.017 0 -8.361">
-         </a-plane>
+        <a-scene>
 
-             
-        <a-plane 
-        color="darkred" 
-        rotation="-90 0 0"
-        width="3"
-        height="3.33" 
-        position="-0.010 0 -8.361">
-        </a-plane>
+            <a-sky 
+                color="cornflowerblue">
+            </a-sky>
 
+            <a-plane
+                color="forestgreen" 
+                width="3" height="3.33" 
+                rotation="-90 0 0"
+                position="-3.017 0 -8.361">
+            </a-plane>
+
+
+            <a-plane 
+                color="darkred" 
+                rotation="-90 0 0" 
+                width="3" height="3.33" 
+                position="-0.010 0 -8.361">
+            </a-plane>
+
+
+            <a-plane 
+                color="yellow" 
+                width="3" 
+                height="3.33" 
+                rotation="-90 0 0" 
+                position="3 0 -8.361">
+            </a-plane>
+
+
+            <a-box 
+                id="lintelLeft"
+                position="0 2.13661 -10.078" 
+                height="9" 
+                width=".5" 
+                depth="0.1" 
+                rotation="0 0 90" 
+                material="" 
+                >
+            </a-box>
+
+            <a-box 
+                id="columngrey"
+                color="grey"
+                position="4.008 0.932 -10.078" 
+                height="0.8325" 
+                width="0.8325" 
+                depth="0.1" 
+                rotation="0 0 90"
+                material="" 
+                geometry="" 
+                scale="2.3 1.21 1">
+            </a-box>
+
+            <a-box 
+                id="columnpurple"
+                color="purple"
+                position="1.491 0.946 -10.082" 
+                height="0.8325" 
+                width="0.8325"
+                depth="0.1" 
+                rotation="0 0 90"
+                material="" 
+                geometry="" 
+                scale="2.3 2.389 1.094">
+            </a-box>
+
+            <a-box 
+                id="columnyellow"
+                color="yellow"
+                position="-1.49108 0.94622 -10.08219" 
+                height="0.8325" 
+                width="0.8325" 
+                depth="0.1" 
+                rotation="0 0 90"
+                material=""
+                geometry="height: 0.833; width: 0.833"
+                scale="2.30046 2.389 1.094">
+            </a-box>
+
+            <a-box 
+                id="columnbrown"
+                color="brown"
+                position="-4.008 0.932 -10.078"
+                height="0.8325" 
+                width="0.8325" 
+                depth="0.1" 
+                rotation="0 0 90"
+                material="" 
+                geometry="" 
+                scale="2.3 1.21 1">
+            </a-box>
+
+            <a-box
+                id="columnwhite"
+                color="white"
+                position="-4.008 0.932  -6.636" 
+                height="0.8325" 
+                width="0.8325" 
+                depth="0.1" 
+                rotation="0 0 90" 
+                material="" 
+                geometry="height: 0.833; width: 0.833" 
+                scale="2.3 1.21 1">
+            </a-box>
+
+            <a-box 
+                id="columngreen"
+                color="green"
+                position="-1.49108 0.94622 -6.636" 
+                height="0.8325" 
+                width="0.8325" 
+                depth="0.1" 
+                rotation="0 0 90" 
+                material="" 
+                geometry="height: 0.833; width: 0.833" 
+                scale="2.30046 2.389 1.094">
+            </a-box>
+
+            <a-box 
+                id="columnpink"
+                color="pink"
+                position="1.491 0.946 -6.636" 
+                height="0.8325" 
+                width="0.8325" 
+                depth="0.1" 
+                rotation="0 0 90" 
+                material="" 
+                geometry="" 
+                scale="2.3 2.389 1.094">
+                </a-box>
+
+            <a-box 
+                id="columnblue"
+                color="lightblue"
+                position="4.008 0.932 -6.636" 
+                height="1"
+                width="2" 
+                depth="0.1" 
+                rotation="0 0 90" 
+                material="" 
+                geometry="" 
+                >
+            </a-box>
             
-        <a-plane color="yellow" 
-        width="3"
-        height="3.33"  
-        rotation="-90 0 0"
-        position="3 0 -8.361">
-        </a-plane>
-    
-              
-        <a-box position="0.00356 2.13661 -10.08219" height="0.8325" width="0.8325" depth="0.1" rotation="0 0 90" material="" geometry="height: 0.833; width: 0.833" scale="0.58612 10.83165 1.094">
+            <a-box 
+                id="lintelright"
+                position="0 2.13661 -6.636" 
+                height="9" 
+                width=".5" 
+                depth="0.1" 
+                rotation="0 0 90" 
+                material="" 
+                >
             </a-box>
-
-        <a-box position="4.008 0.932 -10.078" height="0.8325" width="0.8325" depth="0.1" rotation="0 0 90" material="" geometry="" scale="2.3 1.21 1">
-            </a-box>
-        
-              <a-box position="1.491 0.946 -10.082" height="0.8325" width="0.8325" depth="0.1" rotation="0 0 90" material="" geometry="" scale="2.3 2.389 1.094">
-                  </a-box>
-        
-        <a-box position="-1.49108 0.94622 -10.08219" height="0.8325" width="0.8325" depth="0.1" rotation="0 0 90" material="" geometry="height: 0.833; width: 0.833" scale="2.30046 2.389 1.094">
-            </a-box>
-
-     <a-box position="-4.008 0.932 -10.078" height="0.8325" width="0.8325" depth="0.1" rotation="0 0 90" material="" geometry="" scale="2.3 1.21 1">
-            </a-box>
-    </a-scene>
+            
+        </a-scene>
     </body>
+
     </html>
-    </body>
-    </html>
+</body>
+
+</html>
