@@ -12,22 +12,31 @@
     <html>
 
     <head>
-        <script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
+
+        <script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
+
+        <!--Script needed to create the navmesh in the inspector-->  
+
+        <script src="https://recast-api.donmccurdy.com/aframe-inspector-plugin-recast.js" crossorigin="anonymous"></script>
+
+        <!-- A-frame extras-->
+        <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
+
+         <script src="https://rawgit.com/donmccurdy/aframe-extras/v2.1.1/dist/aframe-extras.loaders.min.js"></script>
+
     </head>
           
     <body>
-        <a-scene>
+            <a-scene physics="gravity: -9.8;restitution: 0.1" inspector-plugin-recast>
 
+            
             <!-- Camera rig -->
-            <a-entity 
-                camera id="camera" 
-                position="3 1 -8.363" 
-                look-controls extended-wasd
-                controls position="0 -2 0" 
-                wasd-controls="enabled: true;"
-                rotation="0 0 0"
-                >
+                <a-entity id="rig" position="3 0 -8.363" movement-controls="constrainToNavMesh: true;speed:0.5;">
+                  <a-entity camera id="camera" position="0 1.6 0" look-controls
+                    extended-wasd-controls>
+                  </a-entity>
                 </a-entity>
+
 
             <a-sky src="images/sky.png"></a-sky>
 
@@ -59,7 +68,7 @@
 
 
             <a-box 
-                id="lintelLeft"
+                id="lintelright"
                 position="0 2.13661 -10.090" 
                 height="9" 
                 width=".5" 
@@ -171,7 +180,7 @@
             </a-box>
             
             <a-box 
-                id="lintelright"
+                id="lintelleft"
                 position="0 2.13661 -6.636" 
                 height="9" 
                 width=".5" 
@@ -330,9 +339,84 @@
                >
                </a-box>
 
-            
+                <a-box 
+                    id="signmiddleleft"
+                    src="images/lil yacht.jpg"
+                    position="0.008 2.13661 -6.700" 
+                    height="0.5"
+                    width="1" 
+                    depth="0.1" 
+                    rotation="0 0 0" 
+                    material="" 
+                    geometry="" 
+                    >
+                </a-box>
 
-           
+                <a-box 
+                    id="signbackleft"
+                    src="images/kendricik olamam.jpg"
+                    position="3.008 2.13661 -6.700" 
+                    height="0.5"
+                    width="1" 
+                    depth="0.1" 
+                    rotation="0 0 0" 
+                    material="" 
+                    geometry="" 
+                    >
+                </a-box>
+
+                <a-box 
+                    id="signfrontleft"
+                    src="images/TRAVIS SCOTTA.jpg"
+                    position="-3.008 2.13661 -6.700" 
+                    height="0.5"
+                    width="1" 
+                    depth="0.1" 
+                    rotation="0 0 0" 
+                    material="" 
+                    geometry="" 
+                    >
+                </a-box>
+
+                <a-box 
+                    id="signfrontright"
+                    src="images/knaye lmaoooooooooo.jpg"
+                    position="-3.008 2.13661 -10.00 " 
+                    height="0.5"
+                    width="1"
+                    depth="0.1" 
+                    rotation="0 0 0" 
+                    material="" 
+                    geometry="" 
+                    >
+                </a-box>
+
+                <a-box 
+                    id="signmiddleright"
+                    src="images/caarti muslilmaooooooo.jpg"
+                    position="0 2.13661 -10.00 " 
+                    height="0.5"
+                    width="1"
+                    depth="0.1" 
+                    rotation="0 0 0"  
+                    material="" 
+                    geometry="" 
+                    >
+                </a-box>
+
+                <a-box 
+                    id="signbackright"
+                    src="images/yeat lmao with name.jpg"
+                    position="3.008 2.13661 -10.00 " 
+                    height="0.5"
+                    width="1" 
+                    depth="0.1" 
+                    rotation="0 0 0" 
+                    material="" 
+                    geometry="" 
+                    >
+                </a-box>
+                
         </a-scene>
     </body>
 
