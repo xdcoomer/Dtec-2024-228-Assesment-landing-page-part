@@ -17,10 +17,19 @@
           
     <body>
         <a-scene>
-            
-            <a-sky 
-               src="sky.png"
-            </a-sky>
+
+            <!-- Camera rig -->
+            <a-entity 
+                camera id="camera" 
+                position="3 1 -8.363" 
+                look-controls extended-wasd
+                controls position="0 -2 0" 
+                wasd-controls="enabled: true;"
+                rotation="0 0 0"
+                >
+                </a-entity>
+
+            <a-sky src="images/sky.png"></a-sky>
 
             <a-plane
                 color="forestgreen" 
@@ -320,6 +329,8 @@
                    geometry="" 
                >
                </a-box>
+
+            
 
            
         </a-scene>
