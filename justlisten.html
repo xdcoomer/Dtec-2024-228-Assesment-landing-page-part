@@ -1,0 +1,615 @@
+
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width">
+          <title>just listen</title>
+
+
+
+        
+                <!--Installing A-Frame-->
+                <script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
+
+
+          <!--Script needed to create the navmesh in the inspector-->  
+
+          <script src="https://recast-api.donmccurdy.com/aframe-inspector-plugin-recast.js" crossorigin="anonymous"></script>
+
+          <!-- A-frame extras-->
+          <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
+
+           <script src="https://rawgit.com/donmccurdy/aframe-extras/v2.1.1/dist/aframe-extras.loaders.min.js"></script>
+
+           
+
+    </head>
+          
+    <body>
+
+            
+        
+                <a-scene physics="gravity: -9.8;restitution: 0.1" inspector-plugin-recast>
+
+                  <a-entity id="rig" position="3 0.5 -8.361" movement-controls="constrainToNavMesh: true;speed:0.2;">
+                    <a-entity camera id="camera" position="0 1.6 0" 
+                        movment-controls ="constrainToNavMesh" look-controls
+                      extended-wasd-controls>
+                    </a-entity>
+                  </a-entity>
+
+
+                <!-- Set the background color -->
+
+                  <a-gltf-model
+                      src="navmesh.gltf" position="0 0 0" nav-mesh visible="false">
+                  </a-gltf-model>    
+                
+            <a-sky src="images/sky.png" ></a-sky>
+
+            <a-plane
+                src="images/srtone floor for dtec.jpg" 
+                width="3"
+                height="10" 
+                rotation="-90 0 0"
+                position="-3.017 0 -8.361">
+            </a-plane>
+
+
+            <a-plane 
+                src="images/srtone floor for dtec.jpg" 
+                rotation="-90 0 0" 
+                width="3.1" 
+                height="10" 
+                position="-0.010 0 -8.361">
+            </a-plane>
+
+
+            <a-plane 
+                src="images/srtone floor for dtec.jpg" 
+                width="3" 
+                height="10" 
+                rotation="-90 0 0" 
+                position="3 0 -8.361">
+            </a-plane>
+
+
+            <a-box 
+                id="lintelright"
+                src="images/marble for dtec.jpg"
+                position="0 2.13661 -10.090" 
+                height="9" 
+                width=".5" 
+                depth="0.1" 
+                rotation="0 0 90" 
+                
+                >
+            </a-box>
+
+            <a-box 
+                id="columngrey"
+                src="images/brick wall for dtec.jpg"
+                position="4.008 0.932 -10.090" 
+                height="1"
+                width="2" 
+                depth="0.1" 
+                rotation="0 0 90" 
+                 >
+            </a-box>
+
+            <a-box 
+                id="columnpurple"
+                src="images/brick wall for dtec.jpg"
+                position="1.491 0.946 -10.090" 
+                height="2"
+                width="2" 
+                depth="0.1" 
+                rotation="0 0 90" 
+                 
+                >
+            </a-box>
+
+            <a-box 
+                id="columnyellow"
+                src="images/brick wall for dtec.jpg"
+                position="-1.49108 0.94622 -10.090" 
+                height="2"
+                width="2" 
+                depth="0.1" 
+                rotation="0 0 90" 
+                
+                >
+            </a-box>
+
+            <a-box 
+                id="columndarkblue"
+                src="images/brick wall for dtec.jpg"
+                position="-4.008 0.932 -10.090"
+                height="1"
+                width="2" 
+                depth="0.1" 
+                rotation="0 0 90" 
+                >
+            </a-box>
+
+            <a-box
+                id="columnwhite"
+                src="images/brick wall for dtec.jpg"
+                position="-4.008 0.932  -6.636" 
+                height="1"
+                width="2" 
+                depth="0.1" 
+                rotation="0 0 90" 
+                >
+            </a-box>
+
+            <a-box 
+                id="columngreen"
+                src="images/brick wall for dtec.jpg"
+                position="-1.49108 0.94622 -6.636" 
+                height="2"
+                width="2" 
+                depth="0.1" 
+                rotation="0 0 90" 
+                
+                >
+            </a-box>
+
+            <a-box 
+                id="columnpink"
+                src="images/brick wall for dtec.jpg"
+                position="1.491 0.946 -6.636" 
+                height="2"
+                width="2" 
+                depth="0.1" 
+                rotation="0 0 90" 
+                 
+                >
+                </a-box>
+
+            <a-box 
+                id="columnlightblue"
+                src="images/brick wall for dtec.jpg"
+                position="4.008 0.932 -6.636" 
+                height="1"
+                width="2" 
+                depth="0.1" 
+                rotation="0 0 90" 
+                 
+                
+                >
+            </a-box>
+            
+            <a-box 
+                id="lintelleft"
+                src="images/marble for dtec.jpg"
+                position="0 2.13661 -6.636" 
+                height="9" 
+                width=".5" 
+                depth="0.1" 
+                rotation="0 0 90" 
+                 
+                >
+            </a-box>
+
+            <a-box 
+                id="wallback"
+                src="images/brick wall 2 for dtec.jpg"
+                position="-4.473 0.932 -8.363" 
+                height="10"
+                width="2" 
+                depth="0.1" 
+                rotation="0 -89.891 90.000" 
+                 
+               
+                >
+            </a-box>
+
+
+            <a-box 
+                id="lintelbackwall"
+                src="images/marble for dtec.jpg"
+                position="-4.473 2.13661 -8.363" 
+                height="3.55" 
+                width=".5" 
+                depth="0.1"
+                rotation="0 -89.891 90.000" 
+                
+                >
+            </a-box>
+            
+            <a-box 
+                id="wallfront"
+                src="images/brick wall 2 for dtec.jpg"
+                position="4.473 0.932 -8.363" 
+                height="10"
+                width="2" 
+                depth="0.1" 
+                rotation="0 -89.891 90.000" 
+                
+                >
+            </a-box>
+
+               
+                
+            <a-box 
+                id="lintelfrontwall"
+                src="images/marble for dtec.jpg"
+                position="4.473 2.13661 -8.363" 
+                height="3.55" 
+                width=".5" 
+                depth="0.1" 
+                rotation="0 -89.891 90.000" 
+               
+                >
+            </a-box>
+
+            <a-box 
+                id="roompinkleft"
+                src="images/brick wall for dtec.jpg"
+                position="1.491 0.946 -5" 
+                height="3.28"
+                width="2" 
+                depth="0.1" 
+                rotation="0 90 90" 
+            
+                >
+                </a-box>
+
+               <a-box 
+                   id="roomgreenright"
+                   src="images/brick wall for dtec.jpg"
+                   position="-1.551  0.946 -5" 
+                   height="3.28"
+                   width="2" 
+                   depth="0.1" 
+                   rotation="0 90 90" 
+                   
+                   >
+                   </a-box>
+
+            <a-box 
+                id="oustiderightwall"
+                src="images/brick wall 2 for dtec.jpg"
+                position="0  0.946 -3.38" 
+                height="9"
+                width="2" 
+                depth="0.1" 
+                rotation="0 0 90" 
+                
+            >
+                </a-box>
+                <a-box 
+                    id="purplewallright"
+                    src="images/brick wall for dtec.jpg"
+                    position="1.491 0.946 -11.72"  
+                    height="3.28"
+                    width="2" 
+                    depth="0.1" 
+                    rotation="0 90 90" 
+                     
+                    >
+                </a-box>
+
+                <a-box 
+                    id="yellowwallleft"
+                    src="images/brick wall for dtec.jpg"
+                    position="-1.551 0.946 -11.72"  
+                    height="3.28"
+                    width="2" 
+                    depth="0.1" 
+                    rotation="0 90 90" 
+                    
+                    >
+                      </a-box>
+                    <a-box 
+                        id="oustiderightwall"
+                        src="images/brick wall 2 for dtec.jpg"
+                        position="0  0.946 -13.34" 
+                        height="9"
+                        width="2" 
+                        depth="0.1" 
+                        rotation="0 0 90" 
+                        
+                    >
+                    </a-box>
+
+                   <a-box 
+                       id="purpleroof"
+                       src="images/ceiling for dtec.jpg"
+                       position="0  1.94 -11.78" 
+                       height="9"
+                       width="3.28" 
+                       depth="0.1" 
+                       rotation="90 0 90" 
+                        
+                   >
+                   </a-box>
+
+            <a-box 
+                   id="redroof"
+                   src="images/ceiling for dtec.jpg"
+                   position="0  1.94 -4.94" 
+                   height="9"
+                   width="3.28" 
+                   depth="0.1" 
+                   rotation="90 0 90" 
+                   
+               >
+               </a-box>
+
+                <a-box 
+                    id="signmiddleleft"
+                    src="images/lil yacht.jpg"
+                    position="0.008 2.13661 -6.700" 
+                    height="0.5"
+                    width="1" 
+                    depth="0.1" 
+                    rotation="0 0 0" 
+                    
+                    >
+                </a-box>
+
+                <a-box 
+                    id="signbackleft"
+                    src="images/don toliver.jpg"
+                    position="3.008 2.13661 -6.700" 
+                    height="0.5"
+                    width="1" 
+                    depth="0.1" 
+                    rotation="0 0 0" 
+                    
+                    >
+                </a-box>
+
+                <a-box 
+                    id="signfrontleft"
+                    src="images/TRAVIS SCOTTA.jpg"
+                    position="-3.008 2.13661 -6.700" 
+                    height="0.5"
+                    width="1" 
+                    depth="0.1" 
+                    rotation="0 0 0" 
+                    
+                    >
+                </a-box>
+
+                <a-box 
+                    id="signfrontright"
+                    src="images/knaye lmaoooooooooo.jpg"
+                    position="-3.008 2.13661 -10.00 " 
+                    height="0.5"
+                    width="1"
+                    depth="0.1" 
+                    rotation="0 0 0" 
+                    
+                    >
+                </a-box>
+
+                <a-box 
+                    id="signmiddleright"
+                    src="images/caarti muslilmaooooooo.jpg"
+                    position="0 2.13661 -10.00 " 
+                    height="0.5"
+                    width="1"
+                    depth="0.1" 
+                    rotation="0 0 0"  
+                    
+                    >
+                </a-box>
+
+                <a-box 
+                    id="signbackright"
+                    src="images/yeat lmao with name.jpg"
+                    position="3.008 2.13661 -10.00 " 
+                    height="0.5"
+                    width="1" 
+                    depth="0.1" 
+                    rotation="0 0 0"
+                    >
+                </a-box>
+
+                    <a-box
+                   id="spotifyboxes"
+                        src="images/yeatspotify.png"
+                   position="3.008 0.946 -13.33 "
+                        height="2"
+                        width="2.70"
+                           depth="0.1"
+                   rotation="0 0 0"
+                      >   
+                    </a-box>
+       
+                    <a-box
+                       id="spotifyboxes"
+                        src="images/cartispotify.png"
+                       position="0  0.946 -13.33 "
+                        height="2"
+                        width="2.70"
+                           depth="0.1"
+                       rotation="0 0 0"
+                     >   
+                    </a-box>
+            
+                    <a-box
+                       id="spotifyboxes"
+                        src="images/kanye spotify.png"
+                       position="-3.008 0.946 -13.33 "
+                        height="2"
+                        width="2.70"
+                           depth="0.1"
+                       rotation="0 0 0"
+                     >   
+                    </a-box>
+
+                    <a-box
+                       id="spotifyboxes"
+                        src="images/donspotify.jpg"
+                       position="3.008 0.946 -3.39"
+                        height="2"
+                        width="2.70"
+                           depth="0.1"
+                       rotation="0 0 0"
+                     >   
+                    </a-box>
+
+                    <a-box
+                       id="spotifyboxes"
+                        src="images/yachtyspotify.png"
+                       position="0 0.946 -3.39"
+                        height="2"
+                        width="2.70"
+                           depth="0.1"
+                       rotation="0 0 0"
+                     >   
+                    </a-box>
+
+                    <a-box
+                       id="spotifyboxes"
+                       src="images/travisspotify.jpg"
+                       position="-3.008 0.946 -3.39"
+                        height="2"
+                        width="2.70"
+                       depth="0.1"
+                       rotation="0 0 0"
+                     >   
+                         </a-box>
+                             
+                             <a-box
+                                id="yeatdescrip"
+                                src="images/yeatdescrip.jpg"
+                                position="1.500 0.946 -11.72"
+                                 height="1.90"
+                                  width="2.30"
+                                 depth="0.1"
+                                  rotation="0 90 0"
+                                     >   
+                             </a-box>
+                    
+                         <a-box
+                             id="dondescrip"
+                             src="images/dondescrip.png"
+                             position="1.500 0.946 -5 "
+                             height="1.90"
+                             width="2.30"
+                             depth="0.1"
+                             rotation="0 90 0"
+                                >   
+                          </a-box>
+
+                            <a-box
+                                 id="travisdescrip"
+                                 src="images/travisdescrip.png"
+                                 position="-4.300 0.946 -5"
+                                 height="1.90"
+                                 width="2.30"
+                                 depth="0.1"
+                                 rotation="0 90 0"
+                                    >   
+                              </a-box>
+
+                    <a-box
+                         id="yachtydescrip"
+                         src="images/yachtydescrip.png"
+                         position="-1.490  0.946 -5"
+                         height="1.90"
+                         width="2.30"
+                         depth="0.1"
+                         rotation="0 90 0"
+                            >   
+                      </a-box>
+                    <a-box
+                         id="kanyedescrip"
+                         src="images/knayedescrip.jpg"
+                        position="-4.340 0.946 -11.72" 
+                         height="1.90"
+                         width="2.30"
+                         depth="0.1"
+                         rotation="0 90 0"
+                            >   
+                      </a-box>
+
+                    <a-box
+                         id="cartidescrip"
+                         src="images/cartdescrrip.png"
+                        position="-1.490 0.946 -11.72" 
+                         height="1.90"
+                         width="2.30"
+                         depth="0.1"
+                         rotation="0 90 0"
+                            >   
+                      </a-box>
+
+                    <a-box
+                         id="donbestsong"
+                         src="images/donsong.png"
+                         position="4.473 0.942 -5"  
+                         height="1.90"
+                         width="2.30"
+                         depth="0.1"
+                         rotation="0 90 0"
+                            >   
+                      </a-box>
+
+                    <a-box
+                         id="yachtybestsong"
+                         src="images/lilyachtysong.png"
+                         position="1.400 0.946 -5 "   
+                         height="1.90"
+                         width="2.30"
+                         depth="0.1"
+                         rotation="0 90 0"
+                            >   
+                      </a-box>
+
+                    <a-box
+                         id="travisbestsong"
+                         src="images/travissong.png"
+                         position="-1.700 0.946 -5 "   
+                         height="1.90"
+                         width="2.30"
+                         depth="0.1"
+                         rotation="0 90 0"
+                            >   
+                      </a-box>
+
+                    <a-box
+                         id="yachtybestsong"
+                         src="images/cartisong.png"
+                         position="1.400 0.946 -11.72 "   
+                         height="1.90"
+                         width="2.30"
+                         depth="0.1"
+                         rotation="0 90 0"
+                            >   
+                      </a-box>
+
+                    <a-box
+                         id="yeatbestsong"
+                         src="images/yeatsong.png"
+                         position="4.400 0.946 -11.72"   
+                         height="1.90"
+                         width="2.30"
+                         depth="0.1"
+                         rotation="0 90 0"
+                            >   
+                      </a-box>
+
+                    <a-box
+                         id="travisbestsong"
+                         src="images/kanyesong.png"
+                         position="-1.700 0.946 -11.72 "   
+                         height="1.90"
+                         width="2.30"
+                         depth="0.1"
+                         rotation="0 90 0"
+                            >   
+                      </a-box>
+                    
+                </a-scene>
+        
+    </body>
+
+    </html>
